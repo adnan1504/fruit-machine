@@ -12,6 +12,7 @@ namespace fruit_machine
 {
     public partial class Form1 : Form
     {
+        dhdjd;
 
         public Form1()
         {
