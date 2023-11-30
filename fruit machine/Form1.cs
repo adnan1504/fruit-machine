@@ -12,7 +12,15 @@ namespace fruit_machine
 {
     public partial class Form1 : Form
     {
-        dhdjd;
+        static Image apple = fruit_machine.Resource1.fruit1;
+        static Image pear = fruit_machine.Resource1.fruit2;
+        static Image mango = fruit_machine.Resource1.fruit3;
+        static Image orange = fruit_machine.Resource1.fruit4;
+        static Image cherry = fruit_machine.Resource1.fruit5;
+        static Image lemon = fruit_machine.Resource1.fruit6;
+        static Image berry = fruit_machine.Resource1.fruit7;
+        Image[] images = { apple,pear,mango,orange,cherry,lemon,berry };
+
 
         public Form1()
         {
@@ -46,7 +54,24 @@ namespace fruit_machine
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
+           for (int i = 0;i<images.Length;i++)
+            {
+                
+                e.Graphics.DrawImage(images[i],0,0);
+                
+            }
 
+
+        }
+
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(pear, 0, 0);
+        }
+
+        private void pictureBox3_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(mango , 0, 0);
         }
     }
 }

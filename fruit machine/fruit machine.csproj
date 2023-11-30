@@ -94,5 +94,26 @@
   <ItemGroup>
     <None Include="Resources\fruits spritesheet.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit7.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
