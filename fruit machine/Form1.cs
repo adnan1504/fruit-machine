@@ -20,7 +20,7 @@ namespace fruit_machine
         static Image lemon = fruit_machine.Resource1.fruit6;
         static Image berry = fruit_machine.Resource1.fruit7;
         Image[] images = { apple,pear,mango,orange,cherry,lemon,berry };
-
+    
 
         public Form1()
         {
@@ -56,11 +56,11 @@ namespace fruit_machine
         {
            for (int i = 0;i<images.Length;i++)
             {
-                
+                  
                 e.Graphics.DrawImage(images[i],0,0);
                 
             }
-
+           
 
         }
 
@@ -72,6 +72,16 @@ namespace fruit_machine
         private void pictureBox3_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(mango , 0, 0);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(mango, 0, 0);
         }
     }
 }
