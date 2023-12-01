@@ -22,7 +22,7 @@ namespace fruit_machine
         Image[] images = { apple,pear,mango,orange,cherry,lemon,berry };
         int pointer = 0;
         int pointer1 = -1;
-       
+        int pointer2 = 1;
 
 
 
