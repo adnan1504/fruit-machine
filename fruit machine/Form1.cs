@@ -24,7 +24,7 @@ namespace fruit_machine
         int pointer1 = -1;
         int pointer2 = 1;
         int pointer3 = 3;
-
+        
 
         public Form1()
         {
@@ -89,10 +89,10 @@ namespace fruit_machine
             pictureBox1.Image = images[pointer];
             pictureBox2.Image = images[num];
             pictureBox3.Image = images[num2];
-            pictureBox6.Image = images[pointer];
-            pictureBox7.Image = images[pointer];
-            pictureBox8.Image = images[pointer];
-            pictureBox9.Image = images[pointer];
+            pictureBox6.Image = images[pointer1];
+            pictureBox7.Image = images[pointer2];
+            pictureBox8.Image = images[pointer2];
+            pictureBox9.Image = images[pointer1];
         }
 
         private void pictureBox4_Paint(object sender, PaintEventArgs e)
