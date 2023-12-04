@@ -38,7 +38,9 @@ namespace fruit_machine
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            timer2.Stop();
+            timer1.Stop();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -77,16 +79,20 @@ namespace fruit_machine
         {
             Random rnd = new Random();
             int rand_num = rnd.Next(0,6);
-            
+            int rand_num2 = rnd.Next(0, 6);
+           
             pointer++;
             if(pointer>=images.Length)
             {
                 pointer= 0;
             }
             pictureBox1.Image = images[pointer];
-            pictureBox2.Image = images[pointer];
-            pictureBox3.Image = images[pointer];
-            
+            pictureBox2.Image = images[rand_num];
+            pictureBox3.Image = images[rand_num2];
+            pictureBox6.Image = images[pointer];
+            pictureBox7.Image = images[pointer];
+            pictureBox8.Image = images[pointer];
+            pictureBox9.Image = images[pointer];
         }
 
         private void pictureBox4_Paint(object sender, PaintEventArgs e)
@@ -96,7 +102,7 @@ namespace fruit_machine
 
         private void pictureBox5_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(mango, 0, 0);
+            
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -106,19 +112,36 @@ namespace fruit_machine
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-            int rand_num = rnd.Next(0, 6);
+           
             pointer1++;
             if (pointer1 >= images.Length)
             {
                 pointer1 = 0;
             }
             pictureBox4.Image = images[pointer];
+            
+            pointer2++;
+            if (pointer2>=images.Length)
+            {
+                pointer2 = 0;
+            }
+            pictureBox5.Image = images[pointer2];
+        }
+
+        private void pictureBox6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            timer2.Start();
         }
     }
 }
