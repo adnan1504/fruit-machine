@@ -23,7 +23,7 @@ namespace fruit_machine
         int pointer = 0;
         int pointer1 = -1;
         int pointer2 = 1;
-
+        int pointer3 = 3;
 
 
         public Form1()
@@ -78,17 +78,17 @@ namespace fruit_machine
         private void timer1_Tick(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            int rand_num = rnd.Next(0,6);
-            int rand_num2 = rnd.Next(0, 6);
-           
+            int num = rnd.Next(0,6);
+            int num2 = rnd.Next(0, 6);
+            int num3 = rnd.Next(0, 6);
             pointer++;
             if(pointer>=images.Length)
             {
                 pointer= 0;
             }
             pictureBox1.Image = images[pointer];
-            pictureBox2.Image = images[rand_num];
-            pictureBox3.Image = images[rand_num2];
+            pictureBox2.Image = images[num];
+            pictureBox3.Image = images[num2];
             pictureBox6.Image = images[pointer];
             pictureBox7.Image = images[pointer];
             pictureBox8.Image = images[pointer];
