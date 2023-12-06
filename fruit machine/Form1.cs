@@ -46,7 +46,7 @@ namespace fruit_machine
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
+        }                           
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -86,7 +86,7 @@ namespace fruit_machine
             {
                 pointer= 0;
             }
-            pictureBox1.Image = images[pointer];
+            pictureBox1.Image = images[pointer];         
             pictureBox2.Image = images[num];
             pictureBox3.Image = images[num2];
             pictureBox6.Image = images[pointer1];
@@ -142,6 +142,32 @@ namespace fruit_machine
         {
             timer1.Start();
             timer2.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled==false)
+            {
+                pointer--;
+                pointer1--;
+                pointer2--;
+                if (pointer2 == 0)
+                {
+                    pointer2 = 6;
+                }
+                if (pointer1 == 0)
+                {
+                    pointer1 = 6;
+                }
+                if(pointer == 0)
+                { 
+                    pointer = 6;
+                }
+                pictureBox4.Image = images[pointer1];
+                pictureBox1.Image = images[pointer];
+                pictureBox5.Image = images[pointer2];
+            }
+            
         }
     }
 }
